@@ -13,7 +13,7 @@ namespace Entidades
         public int Stock { get; set; }
         public int IdCategoria { get; set; }
         public DateTime FechaModificacion { get; set; }
-
+        public categorias_insumos Categoria { get; set; }
 
     }
 }

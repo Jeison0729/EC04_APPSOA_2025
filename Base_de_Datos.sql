@@ -147,3 +147,6 @@ INSERT INTO detalle_compra_proveedor (id_orden_compra, id_insumo, cantidad, prec
 (9, 16, 25, 1.80, 45.00),
 (10, 3, 20, 10.00, 200.00),
 (10, 5, 50, 1.00, 50.00);
+
+
+select * from proveedores

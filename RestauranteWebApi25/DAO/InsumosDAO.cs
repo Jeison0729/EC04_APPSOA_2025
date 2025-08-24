@@ -11,14 +11,7 @@ namespace DAO
 {
     public class InsumosDAO
     {
-        private string cadenaConexion;
-
         private Conexion conexion = new Conexion();
-
-        public InsumosDAO(String cadena)
-        {
-            this.cadenaConexion = cadena;
-        }
 
         public List<Insumos> ListarInsumos()
         {
@@ -30,12 +23,14 @@ namespace DAO
                 var reader = comandoSQL.ExecuteReader();
                 while (reader.Read())
                 {
-                    Insumos objInsumos = new Insumos();
-                    objInsumos.Id = reader.GetInt32(0);
-                    objInsumos.Nombre = reader.GetString(1);
-                    objInsumos.Stock = reader.GetInt32(2);
-                    objInsumos.IdCategoria = reader.GetInt32(3);
-                    objInsumos.FechaModificacion = reader.GetDateTime(4);
+                    Insumos objInsumos = new Insumos
+                    {
+                        Id = reader.GetInt32(0),
+                        Nombre = reader.GetString(1),
+                        Stock = reader.GetInt32(2),
+                        IdCategoria = reader.GetInt32(3),
+                        FechaModificacion = reader.GetDateTime(4)
+                    };
                     insumos.Add(objInsumos);
                 }
                 return insumos;

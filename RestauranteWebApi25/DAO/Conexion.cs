@@ -13,7 +13,7 @@ namespace DAO
 
         public Conexion()
         {
-            cadenaConexion ="Server=DESKTOP-O3EQQG8\\SQLEXPRESS;Database=Restaurante;Trusted_Connection=true;";
+            cadenaConexion = "Server=SERVIDOR\\SQLEXPRESS;Database=Restaurante;Trusted_Connection=true;";
         }
         
         public SqlConnection GetConexion()
