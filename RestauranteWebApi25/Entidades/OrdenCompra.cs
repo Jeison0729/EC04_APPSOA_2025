@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Insumos
+    public class OrdenCompra
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public int Stock { get; set; }
-        public int? IdCategoria { get; set; }
+        public int IdProveedor { get; set; }
+        public string Observaciones { get; set; }
+        public decimal MontoTotal { get; set; }
         public DateTime FechaModificacion { get; set; }
 
-        public categorias_insumos Categoria { get; set; }
-
+        public Proveedor Proveedor { get; set; }
     }
 }

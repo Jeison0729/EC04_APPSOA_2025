@@ -1,0 +1,16 @@
+Examen Final:
+Aplicaciones con Enfoque Orientado a Servicios
+
+INTEGRANTES: 
+- Jesus Chavesta Valencia
+- Jeison Ruiz Farfan
+
+URL: 
+http://localhost:xxxx/api/[Controller]
+
+Ejem:
+http://localhost:64990/api/insumos
+http://localhost:64990/api/categorias
+http://localhost:64990/api/proveedores
+http://localhost:64990/api/ordenCompra
+http://localhost:64990/api/detalleCompra

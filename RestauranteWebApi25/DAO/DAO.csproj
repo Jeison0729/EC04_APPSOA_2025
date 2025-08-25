@@ -43,8 +43,11 @@
   <ItemGroup>
     <Compile Include="CategoriaDAO.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="DetalleCompraDAO.cs" />
     <Compile Include="InsumosDAO.cs" />
+    <Compile Include="OrdenCompraDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProveedorDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
